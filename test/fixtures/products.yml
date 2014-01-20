@@ -11,3 +11,12 @@ two:
   description: MyTextdddsdfsd
   image_url: MyString.jpg
   price: 0.01
+
+test_fix:
+  title: Programming Ruby 1.9
+  description: 
+    Ruby is the fastest growing and most exciting dynamic
+    language out there.  If you need to get working programs
+    delivered fast, you should add Ruby to your toolbox.
+  image_url: ruby.jpg
+  price: 44.9
