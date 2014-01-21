@@ -8,10 +8,11 @@
 </head>
 <body class="<%= controller.controller_name %>">
   <div id="banner" >
-  <%= image_tag("logo.png") %>
+  <%= image_tag("logo.png", class: "img") %>
   Pragmatice Bookshelf
 
   </div>
+
   <div id="colums">
     <div id="side">
     <ul>
@@ -20,12 +21,13 @@
     <li><a href="http://www.baidu.com">百度</a>
     <li><a href="http://www.caihuichina.com">清雨彩绘</a>
     </ul>
-    </div>>
-  </div>>
+    </div>
+
 <div id="main">
 
 <%= yield %>
 </div>
+ </div>
 
 </body>
 </html>
