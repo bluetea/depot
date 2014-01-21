@@ -1,0 +1,21 @@
+<div class="store">
+<% if notice %>
+<p id="notice"><% notice %></p>
+<% end %>
+
+<h1>Your pragmatic catalog</h1>
+
+<%  @product.each  do |product| %>
+
+  <div class="entry">
+    <%= image_tag(product.image_url, class: "img") %>
+    <h3><%= product.title %></h3>
+    <div class="description">
+    <%= sanitize(product.description) %></div>
+    <div class="price_line">
+      <span class="pirce"><%= product.price %></span>
+    </div>
+  </div>
+<% end %>
+</div>
+
