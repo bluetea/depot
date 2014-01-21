@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
+  <title>Pragmatice Book Online Store</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= controller.controller_name %>">
+  <div id="banner" >
+  <%= image_tag("logo.png") %>
+  Pragmatice Bookshelf
+
+  </div>
+  <div id="colums">
+    <div id="side">
+    <ul>
+    <li><a href="http://www.sina.com.cn">新浪</a>
+    <li><a href="http://www.cnbeta.com">CnBeta</a>
+    <li><a href="http://www.baidu.com">百度</a>
+    <li><a href="http://www.caihuichina.com">清雨彩绘</a>
+    </ul>
+    </div>>
+  </div>>
+<div id="main">
 
 <%= yield %>
+</div>
 
 </body>
 </html>
